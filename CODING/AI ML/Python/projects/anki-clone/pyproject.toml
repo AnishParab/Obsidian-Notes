@@ -1,0 +1,7 @@
+[project]
+name = "anki-clone"
+version = "0.1.0"
+description = "Anki is a flashcard-based spaced repetition software (SRS) used to help you remember information more efficiently."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []

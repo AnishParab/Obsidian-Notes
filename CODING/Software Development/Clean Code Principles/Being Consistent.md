@@ -1,0 +1,1 @@
+- Consistency can help to make the system more **maintainable, understandable, and extendable**.
