@@ -1,1 +1,0 @@
-1. [[CODING/Web 2.0/jQuery/Getting Started]]
