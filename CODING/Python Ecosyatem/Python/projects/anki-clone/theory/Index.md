@@ -1,1 +1,0 @@
-[[SuperMemo-2 Algorithm]]

@@ -1,8 +1,0 @@
-# Vector
-
-
----
-# Matrices
-
-
----
