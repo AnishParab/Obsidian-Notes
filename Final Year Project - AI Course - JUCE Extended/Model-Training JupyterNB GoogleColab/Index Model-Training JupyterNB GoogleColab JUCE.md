@@ -1,40 +1,42 @@
-# **Project**
-- This part covers the project codebase.
-
----
-## Update
-[[Timeline for Project]]
-
 ---
 ## Introduction
-[[Synopsis for Project]]
-[[Abstract for Project]]
-[[Flow Diagram for Project]]
 
 ---
-## Datasets
+# Introduction
+[[Synopsis for Project]]
+
+## Design
+[[Flow Diagram for Project]]
+[[DDSP Architecture Diagram]]
+
+---
+# Datasets
 [[DataSets for Project]]
 [[Magenta DDSP Github for Project]]
 
 ---
-## Algorithms and Python Setup
+# Algorithms and Python Setup
 [[Jupyter Notebook for Project]]
 [[Test TF import for Project]]
 [[Tensorflow and Tf-dataset for Project]]
 [[Crepe Algorithm for Project]]
 
 ---
-## JUCE Framework
+# JUCE Framework
 [[JUCE Github for Project]]
 [[JUCE Setup for Arch Linux]]
 
 ---
-## Code
-
+# Modules
+[[Data Module for Project]]
+[[Models Module for Project]]
+[[Preprocessing Module for Project]]
+[[Encoders Module for Project]]
 
 ---
-# **Learn**
-- This part covers the learning part mentioned in the index.
+# Presentation 1
+[[Identification of Problem domain and Detailed analysis of Feasibility Objectives and Methodology]]
+[[Literature Survey]]
+[[Design Methodology]]
 
 ---
-
