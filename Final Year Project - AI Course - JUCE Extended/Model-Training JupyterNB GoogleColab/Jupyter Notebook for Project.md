@@ -1,5 +1,5 @@
 # Refer This first
-[[Virtual Environment in Python - Traditional way]]
+[[Python_VirtualEnv_Concepts_TraditionalApproach]]
 
 ---
 # Add this to `requirements.txt`

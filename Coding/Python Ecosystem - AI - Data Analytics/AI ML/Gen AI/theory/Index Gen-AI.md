@@ -3,7 +3,7 @@
 [[Deep dive into GPT Architecture]]
 [[How LLMs work under the hood]]
 [[Fundamentals of Tokenization in NLP]]
-[[Implementing a custom Tokenizer in Python - pip freeze]]
+[[Python_Pip_Freeze_Custom_Tokenizer_tiktoken]]
 
 ### Transformer Architecture
 [[The Transformer Breakthrough - Google's Paper on Attention]]
