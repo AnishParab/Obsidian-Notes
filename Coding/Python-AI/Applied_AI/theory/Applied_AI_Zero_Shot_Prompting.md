@@ -26,13 +26,23 @@ client = OpenAI(
 )
 
 # Zero-Shot Prompting
-SYSTEM_PROMPT = "You should only and only answer the coding related questions. Do not answer anything else. Your name is Jarvis. If user asks something other than coding, just say sorry"
+SYSTEM_PROMPT = """
+You should only and only answer the coding related questions
+. Do not answer anything else. Your name is Jarvis. If user asks something
+other than coding, just say sorry
+"""
 
 response = client.chat.completions.create(
     model="gemini-3-flash-preview",
     messages=[
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": "Can you teach me a cheesecake recipe?"},
+        {
+            "role": "system",
+            "content": SYSTEM_PROMPT,
+        },
+        {
+            "role": "user",
+            "content": "Can you teach me hoe to make a pizza?",
+        },
     ],
 )
 

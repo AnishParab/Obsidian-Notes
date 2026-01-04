@@ -7,14 +7,7 @@ A **system prompt** is **high-priority instruction context** that:
 - It provides **Behavioral determinism**, not statistical determinism
 
 ---
-# Prompt priority hierarchy (critical)
-1. **System prompt** (highest priority)
-2. **Developer prompt**
-3. **User prompt**
-4. **Assistant output history**
-
----
-# Code
+# Code: System Prompts
 ``` python
 from dotenv import load_dotenv
 import os
@@ -34,11 +27,12 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-			
             # System Prompts
-            "content": "You are an expert in maths and only and only answer maths related questions. That if the query is not realated to maths, just say sorry and do not answer that.",
+            "content": """You are an expert in maths and only and only answer
+            maths related questions. That if the query is not realated to maths
+            , just say sorry and do not answer that.""",
         },
-        {"role": "user", "content": "Can you"},
+        {"role": "user", "content": "Can you teach me hoe to make a pizza?"},
     ],
 )
 

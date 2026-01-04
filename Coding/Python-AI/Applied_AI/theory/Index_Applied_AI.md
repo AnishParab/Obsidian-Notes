@@ -16,12 +16,28 @@
 
 ---
 # API Setup and Integration
+###### OpenAI
 [[Applied_AI_OpenAI_Account_Setup_and_Code]]
+###### Gemini
 [[Applied_AI_Google_Gemini_Account_Setup_and_Code]]
+###### Gemini model running on OpenAI API
 [[Applied_AI_Gemini_Compatible_OpenAI_API_Setup]]
 
 ---
 # Prompt Engineering
+###### Prompting
+[[Applied_AI_Prompt_Engineering_Prompt_Heirarchy]]
+###### Assistant Prompts: Maintaining Contexts
+[[Applied_AI_Prompt_Engineering_Assistant_Prompts]]
+[[Applied_AI_Maintaining_Context_using_Assistant_Prompting]]
+###### User Prompts: Intent and Tasks
+[[Applied_AI_Prompt_Engineering_User_Prompts]]
+[[Applied_AI_Prompt_Engineering_User_Prompts_CLI_Chat_Interface]]
+###### Developer Prompts: Pydantic and Applied AI
+[[Applied_AI_Prompt_Engineering_Developer_Prompts]]
+[[Applied_AI_Prompt_Engineering_Developer_Prompt_Role_Based_Access]]
+[[Applied_AI_RBAC_using_Pydantic]]
+###### System Prompts: Model Behavior Governer
 [[Applied_AI_Prompt_Engineering_System_Prompts]]
 [[Applied_AI_Zero_Shot_Prompting]]
 [[Applied_AI_One_Shot_Prompting]]
@@ -63,32 +79,40 @@
 
 ---
 # RAG and LangChain
+### RAG
 [[Applied_AI_RAG_Systems_Core_Problems]]
 [[Applied_AI_Naive_Retrieval_Based_Approach_Context_Window_Problem]]
 ###### RAG Pipelines
 [[Applied_AI_RAG_Phases]]
 [[Applied_AI_RAG_Pipeline_Indexing_Workflow]]
 [[Applied_AI_RAG_Retreival_Mechanism]]
+### Vector DataBases
 ###### Vector Databse Setup
 [[Applied_AI_Local_Vector_DB_Quadrant_Setup_with_Docker_Compose]]
+### LangChain
 ###### LangChain
 [[Applied_AI_LangChain_Introduction]]
 [[Applied_AI_LanChain_Installation_and_Setup]]
 [[Applied_AI_LanChain_PDF_Mini_Project]]
 [[Applied_AI_LangChain_PDF_Project_But_Production_Level_Code]]
-
----
-# Scalable RAG
+### Scalable RAG
 ###### Sync v/s Async in RAG
 [[Applied_AI_RAG_Architectures_Sync_vs_Async]]
 [[Applied_AI_RAG_Queues_in_System_Design_for_Async_Architecture]]
+[[Applied_AI_Asynchronous_RAG_Overall_File_System]]
 ###### RQ in Python, Redis, Valkey
-[[Applied_AI_Python_Redis_Valkey_Setup]]
-[[Applied_AI_Python_RQ_Distribute_Queues_Setup]]
+[[Applied_AI_Python_Redis_Valkey_Qdrant_Docker_Setup]]
+[[Applied_AI_Python_RQ_Distribute_Queues_Client_RQClient_Setup]]
 ###### Worker Orchestration
-[[Applied_AI_RAG_Worker_Orchestration]]
+[[Applied_AI_RAG_Queues_Worker_Orchestration]]
 ###### FastAPI and RAG
 [[Applied_AI_RAG_FastAPI_Setup]]
-[[Applied_AI_Asynchronous_Message_Enqueing_with_FastAPI]]
+[[Applied_AI_Asynchronous_Message_Enqueing_with_FastAPI_Server]]
+[[Applied_AI_FastAPI_Polling_Dequeuing_Messages_from_Async_Queues]]
+[[Applied_Ai_Running_and_Scaling_Worker_Nodes_for_Background]]
+
+---
+# Multi Modal Agent
+[[Applied_AI_Multi_Modal_Agents]]
 
 ---

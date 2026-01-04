@@ -15,6 +15,6 @@
 - 56: 0
 - 74: 1
 - 89: 2
-> Hence it defines how the meaning of the whole sentaence can change if positions are misplaced.
+> Hence it defines how the meaning of the whole sentence can change if positions are misplaced.
 
 ---

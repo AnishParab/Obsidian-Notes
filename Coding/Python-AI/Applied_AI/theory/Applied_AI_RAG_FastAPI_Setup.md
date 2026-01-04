@@ -9,6 +9,8 @@ pip install "fastapi[standard]"
 
 ---
 # `server.py`
+**server.py (API endpoints)**
+- `/`: Root endpoint returning server status
 ``` python
 from fastapi import FastAPI
 
@@ -22,6 +24,10 @@ def root():
 
 ---
 # `main.py`
+**main.py (Entry point)**
+- Imports FastAPI app from server.py
+- Loads environment variables from .env
+- Starts uvicorn server on port 8000
 ``` python
 from .server import app
 from dotenv import load_dotenv

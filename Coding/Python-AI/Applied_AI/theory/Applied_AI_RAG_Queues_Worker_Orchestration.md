@@ -1,6 +1,8 @@
-# `/queues` : Consumer/Processor
+# `/queues/__init__.py`
+- Makes this a package.
 
-- `worker.py` - **To write the consumer/processor**
+---
+# `queues/worker.py`
 ``` python
 from openai import OpenAI
 import os
@@ -63,10 +65,5 @@ def process_query(query: str):
 
     return response.choices[0].message.content
 ```
-
----
-# `/client` : Producer
-- `__init__.py`
-- `rq_client.py`
 
 ---

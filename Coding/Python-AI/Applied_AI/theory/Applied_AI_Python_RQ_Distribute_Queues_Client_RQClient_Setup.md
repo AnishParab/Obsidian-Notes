@@ -4,14 +4,11 @@ pip install rq
 ```
 
 ---
-# `/queues` : Consumer/Processor
-- Consumes the Messages from the queues.
-- [[Applied_AI_RAG_Worker_Orchestration]]
+# `/client/__init__.py`
+- Makes this a package.
 
 ---
-# `/client` : Producer
-- Produces messages into the queue.
-- `rq_client.py`
+# `/client/rq_client.py`
 ``` python
 from redis import Redis
 from rq import Queue

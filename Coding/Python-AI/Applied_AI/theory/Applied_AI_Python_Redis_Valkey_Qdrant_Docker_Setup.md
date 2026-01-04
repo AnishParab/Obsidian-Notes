@@ -8,6 +8,11 @@
 `docker-compose.yml`
 ``` yaml
 services:
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - 6333:6333
+
   valkey:
     image: valkey/valkey
     ports:
