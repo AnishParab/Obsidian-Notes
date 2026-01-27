@@ -1,14 +1,22 @@
-# Introduction
+# Git Fundamentals
 [[Git_Introduction]]
+[[Git_Why_It_Exists]]
+[[Git_Architectural_Design]]
+[[Git_Terminal_First_Philosophy]]
+[[Git_Failure_Modes]]
+[[Git_Fundamental_Objects]]
+
+---
+# GitHub Fundamentals
 [[Git_vs_GitHub]]
 [[Git_Official_Docs]]
-[[My_GitHub_Account]]
+[[Git_My_GitHub_Account]]
 
 ---
 # Installation and Setup
 [[Git_Installation]]
-[[GitHub_Arch_Linux_Setup]]
-[[GitHub_Local_Project_Level_Setup]]
+[[Git_GitHub_Arch_Linux_Setup]]
+[[Git_GitHub_Local_Project_Level_Setup]]
 
 ---
 # Git Daily Workflow
@@ -24,6 +32,11 @@
 [[Git_Ignore_Generator]]
 ###### Staging Area
 [[Git_Add]]
+###### Informative commands
+[[Git_Diff]]
+###### Informative commands
+[[Git_Diff]]
+[[Git_Stash]]
 ###### Snapshot Repo
 [[Git_Commit_Internal_Workings]]
 [[Git_Commit]]
@@ -40,8 +53,8 @@
 ###### Merging
 [[Git_merge_guide]]
 [[Git_merge_when_it_becomes_messy]]
-###### Informative commands
-[[Git_Diff]]
+###### Rebase
+[[Git_Rebase_Theory]]
 ###### GitHub
 [[Git_Push]]
 
@@ -49,5 +62,7 @@
 # Git Additional Learning
 ###### Deleting a Branch
 [[Git_Delete_Branch]]
+###### Important commands
+[[GIt_Important_more_Commands]]
 
 ---

@@ -1,8 +1,8 @@
 # Foundations
 [[Python_Programming_Basics]]
-[[Python_WhyPython]]
-[[Python_KeyFeatures]]
-[[Python_Applications_InTech]]
+[[Python_Why_Python]]
+[[Python_Key_Features]]
+[[Python_Applications_In_Tech]]
 [[Python_Programming_Paradigms]]
 
 ---

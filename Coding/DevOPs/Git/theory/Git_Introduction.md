@@ -1,10 +1,12 @@
-# Git
+# Git Introduction
+**Git** is a **distributed version control system (DVCS)** that records the **complete history of a project** as a **content-addressed directed acyclic graph (DAG)** of commits.
 
-![Image](https://learn.microsoft.com/en-us/devops/_img/history-abcd-cool-new-feature-e-f-merge-1.png)
+Each clone of a Git repository contains:
+- the **entire history**
+- the **full commit graph**
+- the ability to operate **offline**
 
-**Git** is a **distributed version control system** that tracks code changes, maintains history, and enables safe collaboration using **commits** and **branches**.
 
----
-> I believe, **Git** is a terminal first tool.
+![Image](https://www.edureka.co/blog/wp-content/uploads/2016/11/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png)
 
 ---

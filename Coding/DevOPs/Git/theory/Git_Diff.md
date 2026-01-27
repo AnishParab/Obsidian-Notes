@@ -16,4 +16,12 @@
 git diff --staged
 ```
 
+``` bash
+git diff <commit_id>..<commit_id>
+```
+
+``` bash
+git diff <branch_name_1>..<branch_name_2>
+```
+
 ---
