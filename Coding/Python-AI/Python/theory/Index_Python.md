@@ -6,9 +6,10 @@
 [[Python_Programming_Paradigms]]
 
 ---
-# Installation
-[[Python_venv_pip_python3_archLinux_Installation]]
-[[Python_Check_Version]]
+# Installation / Setup (Arch / Linux)
+[[Python_PyPI_Packages_Ecosystem]]
+[[Python_Arch_Install_Python_pip_venv]]
+[[Python_Arch_PATH_which_locations_and_troubleshooting]]
 
 ---
 # Developer Workflow
@@ -21,79 +22,92 @@
 
 ---
 # Basic Syntax
-[[Python_Syntax_Tabs_vs_Spaces]]
+[[Python_Tabs_vs_Spaces]]
 [[Python_Print_Statements]]
-[[Python_User_Inputs]]
-[[Python_dunders]]
+[[Python_Input_Function]]
+[[Python_Dunders]]
 
 ---
 # Style Guides
 [[Python_Pep8]]
-[[Python_Zen_For_python]]
+[[Python_Zen_of_python]]
 [[Python_Idiomatic_vs_Non_Idiomatic]]
+[[Python_Pythonic_Way_of_Writing_Code]]
 
 ---
 # Tooling (Environment and Workflow)
-###### `venv`
-[[Python_VirtualEnv_Concepts_TraditionalApproach]]
-[[Python_VirtualEnv_Setup_Dependencies_Requirements]]
-[[Python_VirtualEnv_Shipping_Project]]
-[[Python_Why_Venv_Matters]]
-[[Python_Why_Venv_Matters]]
-###### `pip`
-[[Python_Pip_Freeze]]
-[[Python_Dependencies_pipFreeze_Issues]]
-[[Python_Pip_Tools_pipdeptree_pipreqs]]
-###### `uv`
-[[Python_UV_Modern_Python]]
+### `venv`
+###### _Theory_
+[[Python_venv_Concepts]]
+[[Python_venv_Why_Use_venv]]
+###### _Practice_
+[[Python_venv_Setup_and_requirements]]
+[[Python_venv_Shipping_Project]]
+### `pip`
+[[Python_pip_freeze_requirements]]
+[[Python_pip_freeze_noise_transitive_deps]]
+[[Python_pip_tools_pipdeptree_pipreqs]]
+### `uv`
+[[Python_uv_overview]]
 
 ---
 # Operators
+### Arithmetic Operators
 [[Python_Operators_Arithmetic]]
+### Logical Operators
 [[Python_Operators_Logical]]
 [[Python_Operators_Logical_Example]]
+### Comparison Operators
 [[Python_Operators_Comparison]]
+### Bitwise Operators
 [[Python_Operators_Bitwise]]
-[[Python_Walrus_Operator]]
-[[Python_Operator_Overloading]]
+### Walrus Operators
+[[Python_Operators_Walrus]]
+### Operator Overloading
+[[Python_Operators_Overloading]]
+[[Python_Operators_Overloading_List_Concatenation]]
+[[Python_Operators_Overloading_List_Repetition]]
 
 ---
 # Data-Types
-[[Python_Object_Model_Mutable_Immutable]]
-[[Python_All_Matables_Immutables_LSDB]] - **LSDB**
+### Object Model
+[[Python_Object_Model_identity_type_and_value]]
+[[Python_Object_Model_mutability_and_immutability]]
+[[Python_All_Matables_Immutables_LSDB]]
+### Type Conversion
 [[Python_Type_Conversion]]
-### Immutable
-###### Numbers
+### Immutable Datatypes
+###### _Numbers_
 [[Python_NumberTypes]]
 [[Python_Falsy_Truthy_Values]]
-###### Strings - `""`
+###### _Strings_ - `""`
 [[Python_Strings]]
 [[Python_String_Methods]]
 [[Python_Strings_EncodingDecoding]]
-###### Tuples - `()`
+###### _Tuples_ - `()`
 [[Python_Tuples_MembershipTest_Methods]]
 [[Python_Tuples_Swapping_Temperature_Example]]
-###### frozenset - `frozenset({})`
+###### _frozenset_ - `frozenset({})`
 [[Python_frozenset]]
 [[Python_Set_vs_Frozenset]]
-### Mutable
-###### Lists - `[]`
+### Mutable Datatypes
+###### _Lists_ - `[]`
 [[Python_Lists]]
 [[Python_List_Methods]]
 [[Python_List_Concatenation_Repetition]]
 [[Python_Split_String_to_List_Conversion]]
 [[Python_Shopping_List_Example]]
-###### ByteArray
+###### _ByteArray_
 [[Python_ByteArray_and_methods]]
-###### Sets - `{something}` or `set()`
+###### _Sets_ - `{something}` or `set()`
 [[Python_Sets_and_methods]]
 [[Python_Empty_Sets_and_Iterable_Strings]]
 [[Python_Store_inventory_management_Example]]
-###### Dictionary - `dict()` **or** `{key: value,}`
+###### _Dictionary_ - `dict()` **or** `{key: value,}`
 [[Python_Dictionary_and_methods]]
 [[Python_Customer_Profile_Management_Example]]
 [[Python_Checking_Keys_Dictionary_Syntax]]
-###### Advanced Data Types
+###### _Advanced Data Types_
 [[Python_Advanced_DataTypes_Basics]]
 [[Python_datetime_time_calandar_timedelta]]
 [[Python_Arrow]]

@@ -1,8 +1,9 @@
 # Why Python
-- **Portable:** Runs on Windows, macOS, Linux
-- **Readable:** Simple, clean syntax
-- **Productive:** Less code, faster development
-- **Rich Standard Library:** Built-in support for common tasks
-- **Versatile:** Used for web, data, AI, automation, games
+
+- **Portable:** Windows, macOS, Linux
+- **Readable:** simple syntax
+- **Productive:** less code, faster dev
+- **Rich stdlib:** many built-in tools
+- **Versatile:** web, data, AI, automation, games
 
 ---

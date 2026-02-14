@@ -1,7 +1,16 @@
-# React.js: The View Primitive
+# React.js
 
-> [!abstract] Core Concept
-> 
-> React is a **declarative, component-based JavaScript library** for building user interfaces. It operates exclusively on the **View Layer** of the MVC pattern, utilizing a **Virtual DOM (VDOM)** to optimize rendering performance by minimizing direct manipulation of the Browser DOM.
+- JavaScript library for building UIs
+- Declarative UI description
+- Component-based architecture
+- Handles **only** the View layer
+- Uses Virtual DOM for efficient updates
+
+---
+# Notes
+
+- Virtual DOM = in-memory UI representation
+- Diffing decides minimal DOM changes
+- Not a framework
 
 ---

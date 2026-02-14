@@ -1,79 +1,75 @@
-# Idiomatic Python Code
-- **Idiomatic Python** means writing code that follows Python’s natural style and best practices—code that _looks right_ to experienced Python developers.
+# Idiomatic Python
+
+- Idiomatic = code written in Python’s natural style (common patterns + best practices).
+
+## Characteristics
+- readable
+- simple
+- uses built-ins
+- follows conventions (PEP 8)
 
 ---
-# Core Characteristics
-- Clear and readable
-- Simple and expressive
-- Uses Python’s built-in features
-- Follows community conventions (PEP 8)
+# Examples
 
----
-# Example 1
-
-**Non-idiomatic**
+### 1) emptiness check
+Non-idiomatic:
 ```python
 if len(items) != 0:
     print("Items exist")
-```
+````
 
-**Idiomatic**
+Idiomatic:
 ```python
 if items:
     print("Items exist")
 ```
 
----
-# Example 2
-
-**Non-idiomatic**
+### 2) iteration
+Non-idiomatic:
 ```python
 for i in range(0, len(nums)):
     print(nums[i])
 ```
 
-**Idiomatic**
+Idiomatic:
 ```python
 for num in nums:
     print(num)
 ```
 
----
-# Example 3
-
-**Non-idiomatic**
+### 3) boolean check
+Non-idiomatic:
 ```python
 flag = True
 if flag == True:
     run()
 ```
 
-**Idiomatic**
+Idiomatic:
 ```python
 if flag:
     run()
 ```
 
 ---
-# Common Idiomatic Patterns
-- Truthy / falsy checks: `if data:`
-- Multiple assignment: `a, b = b, a`
-- List comprehensions:
+# Common patterns
+
+- truthy/falsy: `if data:`
+- swap: `a, b = b, a`
+
+- list comprehension:
 ```python
 squares = [x*x for x in range(5)]
 ```
-- Context managers:
+
+- context manager:
 ```python
 with open("file.txt") as f:
     data = f.read()
 ```
 
 ---
-# Guiding Principle
 
-> **“There should be one—and preferably only one—obvious way to do it.”**  
-> — _The Zen of Python_
-
-- Idiomatic code prioritizes **clarity over cleverness**.
+> “There should be one—and preferably only one—obvious way to do it.” — Zen of Python
 
 ---

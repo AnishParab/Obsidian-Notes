@@ -1,5 +1,6 @@
 # Example: Functional-Based Programming
-``` python
+
+```python
 def make_chai():
     if not kettle_has_water():
         fill_kettle()
@@ -14,11 +15,12 @@ def make_chai():
     serve("chai")
 
 make_chai()
-```
+````
 
 ---
 # Example: Class-Based Programming
-``` python
+
+```python
 class Chai:
     def __init__(self, sweetness, milk_level):
         self.sweetness = sweetness

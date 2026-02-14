@@ -1,8 +1,10 @@
 # Pre-requisites
+
 [[React_pnpm_corepack_Setup]]
 
 ---
 # Step 1: Create a Dedicated Project Directory
+
 Isolation starts at the filesystem level.
 
 ```bash
@@ -17,6 +19,7 @@ Never share project directories.
 
 ---
 # Step 2: Scaffold React with Vite (pnpm-native)
+
 Use pnpm’s executor, **not npm**.
 
 ```bash
@@ -31,23 +34,6 @@ You will be prompted:
 Why this is safe:
 - `pnpm create` runs in a temp context
 - No global state mutation
-
----
-# Step 3: Pin pnpm Version (Critical for Isolation)
-
-Edit `package.json`:
-```json
-{
-  "packageManager": "pnpm@9.0.0"
-}
-```
-
-Why:
-- Prevents different pnpm versions across projects
-- Corepack enforces this automatically
-
-Failure mode avoided:
-> “Same lockfile, different behavior”
 
 ---
 # Step 4: Install Dependencies (Deterministic)
@@ -85,6 +71,7 @@ This confirms:
 
 ---
 # Step 6: Run the Dev Server
+
 ```bash
 pnpm dev
 ```

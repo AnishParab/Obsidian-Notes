@@ -1,4 +1,4 @@
-# File Extension
+# Create / Edit
 ``` bash
 nvim hello.py
 ```

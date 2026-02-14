@@ -7,3 +7,7 @@
 | `not`    | Inverts the Boolean value            | `not (5 > 2)`         | `False` |
 
 ---
+# Future References
+- [[Python_Operators_Logical_Example]]
+
+---

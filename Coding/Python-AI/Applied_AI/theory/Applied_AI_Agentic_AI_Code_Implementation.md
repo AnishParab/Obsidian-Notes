@@ -1,3 +1,6 @@
+---
+tags:
+---
 This Code is inspired from : [[Applied_AI_Thinking_Mechanism_COT_Prompting]]
 
 ---

@@ -1,3 +1,8 @@
+# Why are Asysmtotic Notations used ?
+
+> They are used to represent **Time Complexity** of an algorithm.
+
+---
 # Worst Case Scenario **(Preferred)**
 **Asymptotic Notation:**
 $$

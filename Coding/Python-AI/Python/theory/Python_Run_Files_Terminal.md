@@ -1,16 +1,17 @@
-# To start `python3` in terminal
+# Python REPL (Terminal)
+## Start
 ``` bash
 python3
 ```
 
 ---
-# Close `python3`
+## Exit
 ``` bash
 exit
 ```
 
 ---
-# Basics
+## Basic check
 ``` python
 import sys
 ```

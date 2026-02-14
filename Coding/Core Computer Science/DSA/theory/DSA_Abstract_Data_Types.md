@@ -1,50 +1,57 @@
 # Abstract Data Types (ADT)
-### Definition
-An **Abstract Data Type (ADT)** is a _logical specification_ of a data structure defined by:
-- **What data it stores**
-- **What operations are permitted**
-- **What each operation guarantees**
 
-An ADT **does not specify**:
-- How data is represented in memory
-- How operations are implemented
+## Definition
 
-This separation is intentional.
+An **ADT** = _logical specification_ of a type:
+- **Data it stores**
+- **Allowed operations**
+- **Guarantees** of operations
 
----
-### Why ADTs Exist (Before How)
-The primary purpose of an ADT is **abstraction**:
-- Decouple _usage_ from _implementation_
-- Enable reasoning about correctness independent of performance choices
-- Allow multiple implementations with identical behavior
-
-This supports:
-- Modularity
-- Replaceability
-- Formal verification of behavior
+An ADT **does not define**:
+- memory representation
+- implementation details
 
 ---
-### Canonical Examples
+# Why ADTs Exist
 
-#### 1. List ADT
-**Intent**: Ordered collection with positional access.
-**Operations (semantic level)**:
-- `insert(position, element)`
-- `remove(position)`
-- `replace(position, element)`
-- `get(position)`
+Purpose: **abstraction**
+- separate **usage** from **implementation**
+- reason about **correctness** independent of performance
+- allow multiple implementations with same behavior
 
-#### 2. Stack ADT
-**Intent**: Last-In–First-Out (LIFO) access discipline.
+Enables:
+- modularity
+- replaceability
+- formal verification
+
+---
+# Canonical Examples
+
+### List ADT
+
+**Intent**: ordered collection with positional access  
 **Operations**:
-- `push(x)` → add element to top
-- `pop()` → remove and return top element
-- `peek()` → return top without removing
+- `insert(pos, x)`
+- `remove(pos)`
+- `replace(pos, x)`
+- `get(pos)`
 
-#### 3. Queue ADT
-**Intent**: First-In–First-Out (FIFO) access discipline.
+---
+### Stack ADT
+
+**Intent**: **LIFO**  
 **Operations**:
-- `enqueue(x)` → insert at rear
-- `dequeue()` → remove from front
+- `push(x)`
+- `pop()`
+- `peek()`
+
+---
+### Queue ADT
+
+**Intent**: **FIFO**  
+**Operations**:
+
+- `enqueue(x)`
+- `dequeue()`
 
 ---

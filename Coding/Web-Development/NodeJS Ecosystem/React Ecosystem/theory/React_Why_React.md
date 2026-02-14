@@ -1,22 +1,35 @@
 # Why React?
 
-> [!success] Core Value
-> 
-> React shifts focus from **how** to update the UI (imperative) to **what** the UI should look like based on data (declarative).
+- Declarative UI
+- Describe **what** the UI should be, not **how** to update it
 
 ---
-# Performance: The Virtual DOM
+## Performance (Virtual DOM)
 
-React avoids expensive browser DOM operations by using a "Virtual" copy.
-
-- **Batching**: Groups updates to prevent UI flicker.
-- **Diffing**: Only updates specific elements that changed.
+- Avoids frequent direct DOM mutations
+- **Batching**: group state updates
+- **Diffing**: update only changed nodes
 
 ---
-# Portability & Ecosystem
+## Portability
 
-- **Learn Once, Write Anywhere**: Same logic works for Web (`react-dom`), Mobile (`React Native`), and Desktop (`Electron`).
-- **Modular**: Plug-and-play libraries for routing and state (unlike "all-in-one" frameworks).
-- **Stability**: Industry standard with long-term support from Meta.
+- Same mental model across platforms
+    - Web: `react-dom`
+    - Mobile: React Native
+    - Desktop: Electron
+
+---
+## Ecosystem
+
+- Unopinionated, modular
+- Routing, state, data fetching are opt-in
+- Easy to replace parts without rewrites
+
+---
+## Stability
+
+- Mature ecosystem
+- Backed by Meta
+- Long-term API stability
 
 ---

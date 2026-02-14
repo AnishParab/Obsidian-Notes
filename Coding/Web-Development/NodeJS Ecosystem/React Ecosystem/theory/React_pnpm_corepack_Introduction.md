@@ -1,69 +1,79 @@
-# Purpose
-- Manages **package manager binaries** (pnpm, yarn)
-- Ensures **per-project pnpm version pinning**
-- Acts as a **dispatcher**, not a package installer
+# Corepack vs pnpm Store
 
-Key invariant:
-> Corepack never installs project dependencies.
+## Corepack — What It Is
+
+- Manages **package manager binaries**
+- Handles **pnpm / yarn versions**
+- **Not** a dependency installer
+
+**Invariant**
+- Never installs project dependencies
 
 ---
-# What it handles
-- Reads `package.json → packageManager`
-- Resolves the required pnpm version
-- Downloads that pnpm binary if missing
-- Executes the correct pnpm version
-### Storage directory
-Corepack stores **only package manager binaries**:
+## Corepack Responsibilities
+
+- Read `package.json → packageManager`
+- Resolve required pnpm version
+- Download pnpm binary if missing
+- Execute that pnpm version
+
+**Storage**
 ```
 ~/.local/share/corepack/
 ```
-(Exact path may vary by OS, but scope is the same.)
+
+- Stores **only binaries**
 
 ---
-# pnpm-store
-### Purpose
-- Stores **npm packages** (project dependencies)
-- Uses a **content-addressable, global store**
-- Shared safely across all pnpm projects
+## pnpm Store — What It Is
 
-Key invariant:
-> Packages are stored once and linked, never duplicated.
-### What it stores
-- Package tarball contents
-- Indexed by content hash
-- Immutable once written
-### Storage directory
-Default pnpm store location:
+- Stores **project dependencies**
+- Global, content-addressable
+- Shared across all projects
+
+**Invariant**
+- Packages stored once, linked everywhere
+
+---
+## pnpm Store Details
+
+- Stores package contents (by hash)
+- Immutable after write
+
+**Storage**
 ```
 ~/.pnpm-store
 ```
 
-(or `~/.local/share/pnpm/store` depending on setup)
-> Corepack never touches this directory.
+(or `~/.local/share/pnpm/store`)
+
+- Corepack never touches this
 
 ---
-# Project-Level Flow
-### Execution Chain
-```
-Shell → pnpm (shim)
-```
+## Execution Flow
 
 ```
-pnpm (shim) → Corepack
+Shell → pnpm (shim) → Corepack → pnpm (binary)
 ```
 
 ---
-# Corepack Responsibilities
-- Reads `package.json`
-- Resolves required pnpm version
-- Downloads pnpm binary if needed
-- Executes that pnpm binary
+## Responsibility Split
+
+**Corepack**
+- Version resolution
+- Binary management
+
+**pnpm**
+- Read `pnpm-lock.yaml`
+- Resolve dependency graph
+- Fetch from pnpm store
+- Create `node_modules` via symlinks
 
 ---
-# pnpm Responsibilities
-- Reads `pnpm-lock.yaml`
-- Resolves exact dependency graph
-- Fetches packages from pnpm store
-- Creates project-local `node_modules` via symlinks
+# Summary
+
+- Corepack = **pnpm launcher**
+- pnpm = **dependency manager**
+- Stores are **separate by design**
 
 ---

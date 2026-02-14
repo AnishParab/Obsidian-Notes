@@ -1,12 +1,30 @@
-# The "Modular Stack" (Standard Ecosystem)
+# Why React Is Not an Ecosystem by Itself
 
-Because React is "UI-only," building a full-scale application requires a curated ecosystem:
+## Core Reason
 
-- **Routing:** `react-router-dom` (Standard) or `TanStack Router` (Type-safe).
-- **State Management:** 
-	- _Local:_ `useState` / `useReducer`.
-    - _Global:_ `Zustand` (Lightweight) or `Redux Toolkit` (Enterprise).
-- **Server State:** `TanStack Query` (Handles caching, loading states, and revalidation).
-- **Styling:** `Tailwind CSS` (Utility-first) or `Framer Motion` (Animations).
+- React is **UI-only**
+- No built-in solutions beyond rendering
+
+---
+## What You Must Add
+
+- **Routing**
+    - `react-router-dom`
+    - `TanStack Router`
+- **State**
+    - Local: `useState`, `useReducer`
+    - Global: `Zustand`, `Redux Toolkit`
+- **Server State**
+    - `TanStack Query`
+- **Styling / Motion**
+    - `Tailwind CSS`
+    - `Framer Motion`
+
+---
+## Summary
+
+- React = rendering layer
+- Full app = React + chosen libraries
+- Ecosystem is **curated**, not bundled
 
 ---

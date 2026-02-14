@@ -1,5 +1,6 @@
-# Programming
-- Giving instructions to a computer to perform tasks.
-- Python makes programming way easier for beginners.
+# Programming in Python
+
+- Programming = giving instructions to a computer to perform tasks.
+- Python is beginner-friendly.
 
 ---

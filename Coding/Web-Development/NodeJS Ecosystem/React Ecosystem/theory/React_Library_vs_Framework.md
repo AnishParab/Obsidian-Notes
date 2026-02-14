@@ -1,11 +1,28 @@
-# Architectural Philosophy: Library vs. Framework
+# Architectural Philosophy: Library vs Framework
 
-- React adheres to the **"Unix Philosophy"**: Do one thing and do it well.
+- React = **library**
+- Follows **Unix philosophy**: one concern, composable
 
-| **Feature**      | **React (Library)**                       | **Next.js / Angular (Framework)**                        |
-| ---------------- | ----------------------------------------- | -------------------------------------------------------- |
-| **Control Flow** | **Developer-led:** You call the library.  | **Inversion of Control:** The framework calls your code. |
-| **Opinion**      | **Unopinionated:** Flexible architecture. | **Opinionated:** Strict "Golden Path" patterns.          |
-| **Ecosystem**    | Modular; pick your own stack.             | Integrated; "Batteries included."                        |
+---
+# Library vs Framework
+
+- **Library**: you control flow
+- **Framework**: framework controls flow (IoC)
+
+---
+# Comparison
+
+| Aspect       | React            | Next.js / Angular |
+| ------------ | ---------------- | ----------------- |
+| Control flow | Developer-driven | Framework-driven  |
+| Opinionation | Low              | High              |
+| Architecture | Flexible         | Prescribed        |
+| Tooling      | Opt-in           | Built-in          |
+
+---
+# Notes
+
+- React handles only UI
+- Frameworks trade flexibility for convention
 
 ---

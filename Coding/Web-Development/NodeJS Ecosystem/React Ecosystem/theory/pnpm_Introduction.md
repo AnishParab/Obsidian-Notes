@@ -1,7 +1,25 @@
 # pnpm
 
-> [!success] The Core Value
-> 
-> pnpm (Performant npm) is a fast, disk-space-efficient package manager that uses a **content-addressable store** to manage `node_modules`. It solves the "phantom dependency" problem caused by hoisting.
+- Fast, disk-efficient package manager
+- Uses **content-addressable store**
+
+---
+## Key Points
+
+- Single global store for all packages
+- Projects link to store (no duplication)
+- Strict dependency isolation
+
+---
+## Solves
+
+- Phantom dependencies (from hoisting)
+- Bloated `node_modules`
+
+---
+## Result
+
+- Less disk usage
+- More predictable installs
 
 ---
