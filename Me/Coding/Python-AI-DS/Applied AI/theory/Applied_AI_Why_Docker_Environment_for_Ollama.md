@@ -1,4 +1,5 @@
 # Why run **Ollama** with **Docker**?
+
 - Running Ollama via Docker is about **isolation, reproducibility, and minimal host pollution**, not performance gimmicks.
 
 ---

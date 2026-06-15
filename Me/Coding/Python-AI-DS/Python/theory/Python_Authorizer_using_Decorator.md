@@ -1,4 +1,5 @@
 # Code
+
 ``` python
 from functools import wraps
 
@@ -29,6 +30,7 @@ Access granted to tea inventory
 
 ---
 # **NOTE**
+
 > `return None` is required, as older versions of python requires **explicit returns**.
 
 ---

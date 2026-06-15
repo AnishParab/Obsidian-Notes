@@ -1,4 +1,5 @@
 # How this code makes it Non-Blocking
+
 - The **event loop runs in the main thread**.
 - `check_stock()` is submitted to a **worker thread** managed by `ThreadPoolExecutor`.
 - `time.sleep(3)` blocks **only that worker thread**, not the event loop.

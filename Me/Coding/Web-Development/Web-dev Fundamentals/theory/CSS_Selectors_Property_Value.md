@@ -1,3 +1,0 @@
-# CSS - Selectors, Property, Value
-
----

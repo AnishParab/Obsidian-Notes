@@ -1,10 +1,12 @@
 # Step 4: Self-Attention (Contextualization)
+
 - **Vector embeddings interact with each other**
 - Each token updates its meaning based on **surrounding tokens**
 - This produces **context-aware embeddings**
 
 ---
 # What actually happens (simplified)
+
 - Every word looks at **other words in the sentence**
 - It decides **which words are important**
 - Its vector is updated to reflect the **correct context**

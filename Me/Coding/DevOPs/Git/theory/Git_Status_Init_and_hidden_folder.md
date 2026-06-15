@@ -1,4 +1,5 @@
 # Git Status
+
 ``` bash
 git status
 ```
@@ -6,6 +7,7 @@ git status
 
 ---
 # Git Init (One time per Project)
+
 ``` bash
 git init
 ```
@@ -13,6 +15,7 @@ git init
 
 ---
 # `.git` folder
+
 - The **`.git` folder** is the **internal database** of a **Git** repository.  
 - It stores **commit history, branches, configuration, and metadata** required for version control.  
 - Deleting it removes all Git tracking from the project.

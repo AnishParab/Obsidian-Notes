@@ -1,25 +1,15 @@
-# What are tokens?
-**Tokens** are the **basic units of text** that a language model processes.
+# Tokens
 
-A token can be:
-- A **character**
-- A **subword**
-- A **word**
-- Or even **punctuation / whitespace**
+ >Basic units of text a model processes — can be a char, subword, word, or punctuation
+ 
+- Tokens are text units converted to numbers (token IDs) via a tokenizer
+- Pipeline: `Text → Tokenizer → Tokens → Token IDs → Model`
 
----
-# Definition
-> Tokens are **numerical representations of text units** obtained by converting text into discrete pieces using a tokenizer.
+ > Models see only numbers, never raw text
 
----
-# What actually happens
-
-> _Text is first split into tokens, then tokens are mapped to numbers (token IDs)._
-
-So the pipeline is:
-```
-Text → Tokenizer → Tokens → Token IDs → Model
-```
+**Why it matters**:
+- Token count drives context length, cost, and performance
+- Tokenization differs across models
 
 ---
 # Example
@@ -38,14 +28,5 @@ Mapped to IDs:
 ```
 [1234, 5678, 42, 8910]
 ```
-
----
-# Why tokens matter
-- Models **do not see text**, only numbers
-- Token count affects:
-    - Context length
-    - Cost
-    - Performance
-- Different models tokenize differently
 
 ---

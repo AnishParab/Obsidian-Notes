@@ -1,0 +1,5 @@
+# Clear Session
+
+- `/clear` flag
+
+---

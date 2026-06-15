@@ -1,13 +1,15 @@
 # NOTE
+
 > Note that in this code, no matter how good the **Developer Prompt** is, the output will be unpredictable.
 
 > Hence **Pydantic** is required in such cases to strictly define the user roles.
    It fixes **model nondeterminism by removing interpretation freedom**.
 
-[[Applied_AI_RBAC_using_Pydantic]]
+[[Applied_AI_Prompt_Engineering_Developer_Prompt_RBAC_using_Pydantic]]
 
 ---
 # Code
+
 ``` python
 from dotenv import load_dotenv
 import os

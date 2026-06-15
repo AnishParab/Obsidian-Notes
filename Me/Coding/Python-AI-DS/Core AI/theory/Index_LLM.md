@@ -1,10 +1,7 @@
 # Refer this :
 
-[[Index_Applied_AI]] -> **for Coding**
+[[Index_Applied_AI]]
 
-**and**
-
-[[Index_Core_AI]] -> **for Research**
-> and search for `Large Language Models / Applied AI`
+> and search for `LLM's`
 
 ---

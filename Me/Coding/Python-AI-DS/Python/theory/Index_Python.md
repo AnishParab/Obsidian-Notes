@@ -1,6 +1,10 @@
 # **Topics covered:**
-- **[[#Python]]**
-- **[[#Pydantic]]
+[[#Python]]
+[[#Pydantic]]
+[[#Mini-Projects]]
+[[#PyQt]]
+[[#NumPy]]
+[[#FastAPI]]
 
 ---
 # Python
@@ -119,6 +123,8 @@
 [[Python_datetime_time_calandar_timedelta]]
 [[Python_Arrow]]
 [[Python_Collections]]
+##### Type Annotations
+[[Index_Python_Type_Annotations_or_Hints]]
 
 ---
 ## **Conditionals**
@@ -247,63 +253,93 @@
 [[Python_Decorator_CachingExpensiveCalculations_Example]]
 
 ---
-# Object Oriented Programming (OOP)
+## **Object Oriented Programming (OOP)**
 - Learn **OOPS** concepts here - [[Index_LLD_OOPS]]
-##### Object Creation and Class Reference
-[[Python_Classes_Object_creation_and_Class_reference]]
-[[Python_Object_creation_vs_Class_reference_and_isinstance_hasattr]]
-##### Attributes in a Class
-[[Python_Attributes_and_adding_at_runtime]]
-[[Python_slots_To_Stop_Attribute_Addition_at_Runtime]]
+##### Python Internals
+[[Python_OOPS_Class_Creation_Internals]]
+##### Class, Objects and Reference
+[[Python_OOPS_Class_Object_and_Reference]]
+[[Python_OOPS_Object_vs_Reference_isinstance_and_hasattr]]
+##### Constructors, Destructors and `__init__`
+[[Python_OOPS_Constructors_self_and_init]]
+[[Python_OOPS_Destructors_and_del]]
+##### Attributes, `AttributeError` and Attribute Shadowing
+[[Python_OOPS_Class_and_Instance_Attributes]]
+[[Python_OOPS_Attribute_Shadowing_and_del]]
+[[Python_OOPS_AttributeError]]
+[[Python_OOPS_Attribute_Lookup_Order]]
+[[Python_OOPS_Attribute_Shadowing_Example]]
+[[Python_OOPS_Attributes_at_Runtime]]
+[[Python_OOPS_Attributes_slots]]
 ##### Namespaces in Objects v/s References
-[[Python_Namespaces_in_Classes]]
-[[Python_Same_namespaces_among_References]]
-[[Python_Different_namespaces_among_Objects]]
-##### Internal Implementation of Classes and Objects
-[[Python_Classes_and_Objects_Internal_Implementation]]
-##### Methods in a Class and Self Argument
-[[Python_Methods_in_a_class]]
-[[Python_Self_Argument_Implicit_Explicit_Passing]]
-##### Constructors and Destructor
-[[Python_Constructors_Initialization_type_]]
-[[Python_Destructors__del__]]
-##### Copy Constructor
-[[Python_Copy_Constructor_copy_library]]
-[[Python_Copy_Constructor_Shallow_Copy]]
-[[Python_Copy_Constructor_Deep_Copy]]
-[[Python_Copy_Constructor_Shallow_vs_Deep_Copy]]
-##### Attribute Shadowing
-[[Python_Attribute_Shadowing_using_del_keyword]]
-[[Python_Shadowing_Class_Attribute_Example]]
-##### Attribute Errors
-[[Python_Attribute_Error]]
-##### `staticmethod` v/s `classmethod` and **Magic Methods**
-[[Python_staticmethod_Decorator]]
-[[Python_When_to_use_staticmethod_Decorator]]
-[[Python_classmethod_Decorator]]
-[[Python_When_to_use_classmethod_Decorator]]
-[[Python_classmethod_vs_staticmethod_Decorators]]
-[[Python_Magic_Methods]]
+[[Python_OOPS_Namespaces_in_Classes]]
+[[Python_OOPS_Namespaces_for_References]]
+[[Python_OOPS_Namespaces_among_Instances]]
+##### Methods and Self Argument
+[[Python_OOPS_Method_Types]]
+[[Python_OOPS_Instance_Methods]]
+[[Python_OOPS_Class_Methods]]
+[[Python_OOPS_Class_Methods_Example_and_Conceptual_Understanding]]
+[[Python_OOPS_Static_Methods]]
+[[Python_OOPS_Static_Methods_Example_and_Conceptual_Understanding]]
+[[Python_OOPS_classmethod_vs_staticmethod_Decorators]]
+##### `self` and `cls`
+[[Python_OOPS_self_vs_cls]]
+[[Python_OOPS_self_Implicit_and_Explicit_Passing]]
 ##### Access Modifiers
-[[Python_Access_Modifiers]]
-[[Python_Acheiving_Partially_True_Access_Control_without_external_libraries]]
-[[Python_Acheiving_Partially_True_Access_Control_with_external_libraries]]
-##### Getter and Setter
-[[Python_property_Decorator_Getter_and_Setter]]
+[[Python_OOPS_Access_Modifiers_public_private_protected]]
+##### `@property`, Getter and Setter
+[[Python_OOPS_Properties_Getters_and_Setters]]
+[[Python_OOPS_Getters_good_practices]]
+##### **Magic** / Dunder Methods
+[[Python_OOPS_Magic_or_Dunder_Methods]]
+##### **Assocation**
+[[Python_OOPS_Association]]
+[[Python_OOPS_Association_Class_Association]]
+[[Python_OOPS_Association_Object_Association]]
+##### **INHERITANCE**, **MUTIPLE INHERITANCE** and **MRO** - `Class Association`
+[[Python_OOPS_Association_Class_Association]]
+[[Python_OOPS_Inheritance]]
+[[Python_OOPS_Inheritance_super]]
+[[Python_OOPS_Multiple_Inheritance]]
+[[Python_OOPS_MRO]]
+[[Python_OOPS_MRO_C3_Linearization]]
+[[Python_OOPS_MRO_Examples]]
+[[Python_OOPS_super_MRO_Behavior]]
+[[Python_OOPS_super_MRO_Example]]
+[[Python_OOPS_Accessing_Base_Class]]
+##### **COMPOSITION** - `Object Association`
+[[Python_OOPS_Association_Object_Association]]
+[[Python_OOPS_Composition]]
+[[Python_OOPS_Composition_vs_Inheritance]]
+[[Python_OOPS_Why_Composition_over_Inheritance]]
+[[Python_OOPS_Composition_via_Class_Reference]]
+[[Python_OOPS_Composition_via_Runtime_Constructors]]
+##### **ABSTRACTION**
+[[Python_OOPS_Abstraction]]
+[[Python_OOPS_Abstraction_Partial_Implementations]]
+##### **POLYMORPHISM**
+[[Python_OOPS_Polymorphism]]
+[[Python_OOPS_Polymorphism_with_Inheritance]]
+[[Python_OOPS_Polymorphism_Duck_Typing]]
+##### **ENCAPSULATION**
+[[Python_OOPS_Encapsulation]]
+##### `__new__` v/s `__init__`
+[[Python_OOPS_new_vs_init_Methods]]
+[[Python_OOPS_new_Use_Cases]]
+##### Copy Constructors and `memo`
+[[Python_OOPS_Copy_Constructor]]
+[[Python_OOPS_Copy_Constructor_Shallow_Copy]]
+[[Python_OOPS_Copy_Constructor_Deep_Copy]]
+[[Python_OOPS_Copy_Constructor_Shallow_vs_Deep_Copy]]
+[[Python_OOPS_Copy_Constructors_Custom_copy_Behaviour_and_memo]]
 ##### Practice Problem
 [[Python_OOPS_Vehicle_Rental_System_Example]]
-##### Inheritance and Composition
-[[Python_Inheritance_Composition_Runtime_Constructors]]
-[[Python_Accessing_Base_Class_super_method]]
-[[Python_MRO_ Multiple_Inheritance]]
-##### Abstraction in Python
-[[Python_Abstraction]]
-##### Encapsulation in Python
-[[Python_Encapsulation]]
-##### Polymorphism
+##### Descriptors
+[[Python_OOPS_Descriptors]]
 
 ---
-# File and Exception Handling
+## **File and Exception Handling**
 ##### Error Handling
 [[Python_Error_or_Exception_Handling]]
 [[Python_try_except_raise_finally]]
@@ -316,7 +352,7 @@
 [[Python_Modern_Native_File_Handling_with_keyword]]
 
 ---
-# MultiThreading,MultiProcessing,GIL
+## **MultiThreading, MultiProcessing, GIL**
 ###### Basics
 [[Python_Concurrency_Parallelism]]
 [[Python_Concurreny_Parallelism_Modules_Required]]
@@ -340,7 +376,7 @@
 [[Python_Daemon_Thread_Code]]
 
 ---
-# Asyncio
+## **Asyncio**
 ###### Basics
 [[Python_Asyncio_Async_Coroutines_Await_Theory]]
 [[Python_Event_Loop_Blocking_Non_Blocking]]
@@ -354,26 +390,29 @@
 
 ---
 # Pydantic
-###### Basics
+[[Index_Pydantic]]
+##### Introduction to Pydantic
 [[Python_Pydantic_Introduction]]
 [[Python_Pydantic_Installation]]
 [[Python_Pydantic_Foundation_Code]]
 [[Python_Pydantic_Default_Conversions]]
-###### Pydantic and Typing
+##### Pydantic and Typing
 [[Python_Pydantic_and_Typing]]
-###### Fields
+##### Fields
 [[Python_Pydantic_Fields_and_Regex]]
-###### Validators
+##### Validators
 [[Python_Pydantic_Field_and_Model_Validators]]
-###### Computed Property
+##### Computed Property
 [[Python_Pydantic_Computed_Property]]
-###### Advanced Validation
+##### Advanced Validation
 [[Python_Pydantic_Advanced_Validation]]
-###### Nested Models
+##### Nested Models
 [[Python_Pydantic_Nested_Models]]
+##### Metadata Annotations
+[[Pydantic_Metadata_Annotations]]
 
 ---
-# Projects
+# Mini-Projects
 ###### Python Utilities
 [[Python_Self_Intro_Script_Generator_datetime]]
 [[Python_Stylish_Bio_Generator_textwrap]]
@@ -384,7 +423,7 @@
 [[Python_Daily_Learning_Journal_Logger]]
 
 ---
-# UI in Python - using PyQt
+# PyQt
 ###### Index PyQt
 [[Index_PyQt]]
 ###### Foundation
@@ -401,5 +440,31 @@
 # NumPy
 ##### Index NumPy
 [[Index_NumPy]]
+
+---
+# FastAPI
+[[Index_FastAPI]]
+[[FastAPI_Documentation]]
+##### FastAPI Introduction
+[[FastAPI_Introduction]]
+[[FastAPI_Features]]
+[[FastAPI_Requirements]]
+##### FastAPI Installation and Minimal Server
+[[FastAPI_Installation]]
+[[FastAPI_Minimal_Server_Hello_World]]
+[[FastAPI_Minimal_Server_Hello_World_with_pydantic]]
+[[FastAPI_Running_the_Server]]
+##### FastAPI API docs
+[[FastAPI_API_Docs]]
+##### FastAPI Cloud
+[[FastAPI_Cloud]]
+##### Python Types
+[[Index_Python_Type_Annotations_or_Hints]]
+[[FastAPI_Type_Annotations_or_Hints_Use_Cases]]
+##### Requests
+[[FastAPI_POST_Request]]
+
+---
+# Typer
 
 ---

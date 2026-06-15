@@ -1,11 +1,10 @@
-# Data Definition Language (DDL)
+# Data Manipulation Language (DML)
 
-- Used to **define database schema** (structure)
+- Used to **modify data**
 
 **Operations**
-- `CREATE` → Create tables, databases
-- `ALTER` → Modify structure
-- `DROP` → Delete objects
-- `TRUNCATE` → Remove all records (structure remains)
+- `INSERT` → Add data
+- `UPDATE` → Modify data
+- `DELETE` → Remove data
 
 ---

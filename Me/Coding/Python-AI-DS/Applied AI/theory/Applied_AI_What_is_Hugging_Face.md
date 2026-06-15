@@ -1,9 +1,11 @@
-> Hugging Face is like the **GitHub** of LLM models.
-
-> You have many datasets available also.
-
----
 # Hugging Face
-[Hugging Face](https://huggingface.co/)
+
+- GitHub for machine learning models and datasets.
+- Central ecosystem where people:
+    - upload models
+    - share datasets
+    - run inference
+    - fine-tune models
+    - collaborate on ML projects
 
 ---

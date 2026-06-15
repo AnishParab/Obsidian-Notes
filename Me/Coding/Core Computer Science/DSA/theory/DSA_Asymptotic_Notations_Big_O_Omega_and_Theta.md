@@ -3,13 +3,11 @@
 > They are used to represent **Time Complexity** of an algorithm.
 
 ---
-# Worst Case Scenario **(Preferred)**
+# Worst Case Scenario **(Preferred)**: Big O
 
 **Asymptotic Notation:**
 $$
-[
 O(f(n))
-]
 $$
 
 Describes the **upper bound** on running time — the algorithm will never be slower than this bound.
@@ -17,25 +15,21 @@ Describes the **upper bound** on running time — the algorithm will never be sl
 > **NOTE**: This is mostly used to optimize your code.
 
 ---
-# Best Case Scenario
+# Best Case Scenario: Omega
 
 **Asymptotic Notation:**
 $$
-[
 \Omega(f(n))
-]
 $$
 
 Represents the **lower bound** — the algorithm will never be faster than this bound.
 
 ---
-# Average Case Scenario
+# Average Case Scenario: Theta
 
 **Asymptotic Notation:**
 $$
-[
 \Theta(f(n))
-]
 $$
 
 Represents the **tight bound** — captures typical performance when inputs are randomly distributed.
@@ -43,9 +37,7 @@ Represents the **tight bound** — captures typical performance when inputs are 
 ---
 # **Summary Condition**
 $$
-[  
 \Theta = O\ \text{+}\ \Omega\ \text{(both must hold)}  
-]
 $$
 - Big O → **upper bound**
 - Omega → **lower bound**

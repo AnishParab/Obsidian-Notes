@@ -1,4 +1,5 @@
 # Git Rebase
+
 - Alternative to merging.
 - Clean up tool (Clean up commits).
 

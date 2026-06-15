@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-This Code is inspired from : [[Applied_AI_Thinking_Mechanism_COT_Prompting]]
+This Code is inspired from : [[Applied_AI_Prompt_Engineering_COT_Prompts_Thinking_Mechanism]]
 
 ---
 # Real-Time Weather Agent

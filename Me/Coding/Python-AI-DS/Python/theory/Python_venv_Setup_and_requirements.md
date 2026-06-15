@@ -1,6 +1,6 @@
 # venv setup (Linux)
 
-## Create + activate
+##### Create + activate
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate

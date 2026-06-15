@@ -15,6 +15,7 @@
 
 ---
 # Event Loop
+
 **Definition**
 - An **event loop** is a core mechanism that continuously checks for and executes **scheduled tasks**, **callbacks**, and **I/O events** without blocking the program.
 
@@ -44,6 +45,7 @@
 
 ---
 # Blocking (Blocks Event Loop)
+
 **What blocks the event loop (bad)**
 - `time.sleep()`
 - Heavy CPU computation
@@ -51,6 +53,7 @@
 
 ---
 # Non-Blocking (Doesn't Block Event Loop)
+
 **What doesn’t block (good)**
 - `await asyncio.sleep()`
 - Async network calls

@@ -3,7 +3,7 @@
 ---
 # Algorithm — Definition
 
-An algorithm is a **finite, ordered sequence of steps designed to solve a specific problem**.
+> An algorithm is a **finite, ordered sequence of steps designed to solve a specific problem**.
 
 ---
 # Essential Properties of an Algorithm

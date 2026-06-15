@@ -10,12 +10,14 @@
 
 ---
 # Why was `master` controversial
+
 **Why it was criticized**
 - The term _master_ was associated by some with **master–slave terminology**, commonly used in older tech systems.
 - It was viewed as **non-inclusive language**, even though Git’s `master` was never intended with that meaning.
 
 ---
 # By default
+
 ``` bash
 git branch
 ```

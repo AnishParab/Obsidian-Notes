@@ -6,4 +6,6 @@
 
 > It it the software implementation of a **relational model**.
 
+- Examples of RDBMS are **MySQL (*Open-source*), Oracle, MS Access** etc.
+
 ---

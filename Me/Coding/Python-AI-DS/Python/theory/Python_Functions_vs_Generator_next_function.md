@@ -41,6 +41,7 @@ StopIteration
 
 ---
 # Key Takeaways:
+
 - `yield` turns a function into a generator.
 - Once a generator is exhausted, `StopIteration` is raised.
 - Use `next()` to manually fetch values or loop through with `for`.

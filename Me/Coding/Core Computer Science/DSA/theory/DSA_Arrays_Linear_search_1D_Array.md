@@ -4,9 +4,9 @@
 arr = [2, 1, 8, 9, 12, 15, 11, 19]
 
 
-def linear_search(arr, x):
+def linear_search(arr, key):
     for i in range(len(arr)):
-        if arr[i] == x:
+        if arr[i] == key:
             return i
     return -1
 
@@ -15,7 +15,7 @@ x = 15
 
 result = linear_search(arr, x)
 
-print("Searching element is present at the index", result)
+print("Searching element is present at the index ", result)
 ```
 
 ---
@@ -36,6 +36,8 @@ $$
 
 ---
 # Space Complexity
+
+- We are not using any extra space apart from the given array:
 
 > Space Complexity: **O(1)**.
 

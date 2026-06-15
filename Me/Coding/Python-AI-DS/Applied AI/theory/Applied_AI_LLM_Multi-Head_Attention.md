@@ -1,9 +1,11 @@
 # Step 5: Multi-Head Attention
+
 - **Multi-head attention** runs **self-attention multiple times in parallel** using different learned projections.
 - Each head looks at the **same sentence**, but focuses on **different relationships**.
 
 ---
 # Why it exists
+
 A single attention pass is too limited.
 
 Multiple heads allow the model to:
@@ -15,6 +17,7 @@ All at the same time.
 
 ---
 # What actually happens (step-by-step)
+
 1. Start with the **same token embeddings**
 2. Split them into **multiple heads**
 3. Each head:

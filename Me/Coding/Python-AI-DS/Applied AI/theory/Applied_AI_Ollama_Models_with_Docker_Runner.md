@@ -3,6 +3,7 @@
 
 ---
 # Download the Docker Image
+
 ``` bash
 docker run ollama/ollama
 ```

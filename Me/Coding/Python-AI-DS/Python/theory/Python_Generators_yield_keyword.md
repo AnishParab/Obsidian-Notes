@@ -1,4 +1,5 @@
 # Why Generators?
+
 - Use less memory (no full list stored).
 - Lazy evaluation (values produced on demand).
 - Useful when results don't need to be stored all at once.
@@ -21,13 +22,16 @@ stall = serve_chai()
 for cup in stall:
     print(cup)
 ```
+
 **Output:**
 ```text
 Cup 1: Masala Chai
 Cup 2: Ginger Chai
 Cup 3: Elaichi Chai
 ```
-### Exaplanation
+
+---
+# Exaplanation
 ![[decorators.excalidraw|500]]
 
 ---

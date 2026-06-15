@@ -1,4 +1,5 @@
 # What ?
+
 > **Infinite generator**; never runs out of values.
 > Hence it is useful for **STREAMING DATA**.
 
@@ -48,6 +49,7 @@ Refill #6
 
 ---
 # Notes:
+
 * `infinite_chai()` is an infinite generator; it never runs out of values.
 * Each generator instance keeps its own internal `count`.
 * Useful for streams, simulations, or when you can't predict an end condition.

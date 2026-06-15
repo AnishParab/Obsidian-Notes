@@ -1,114 +1,25 @@
-# Represents Worst Case Scenario **(Preferred)**
+# Big O - Time Complexity
 
-**Asymptotic Notation:**
-$$
-[
-O(f(n))
-]
-$$
+- Asymptotic notation for **worst case** (upper bound)
+- $f(n) = O(g(n))$ means $f$ grows no faster than $g$ (up to constant factors)
+- Most used in practice — optimise against the worst case
 
-Describes the **upper bound** on running time — the algorithm will never be slower than this bound.
-
-> **NOTE**: This is mostly used to optimize your code.
-
----
-# Input size (n) : For machine specific : Aposteriori Analysis
-
-![[bigO.excalidraw]]
-
----
-# Big O Notation
-
-To express that a function ( f(n) ) grows **no faster** than another function ( g(n) ), we write:
+## Formal Definition
 $$
-[
-f(n) = O(g(n))
-]
+f(n) = O(g(n))\quad iff\quad ∃\quad c > 0,\quad n₀ ≥ 1 
 $$
-This means **“f(n) is bounded above by g(n) up to constant factors.”**
-
-##### **Formal Definition**
+- such that:
 $$
-[
-f(n) = O(g(n))
-\quad\text{iff}\quad
-\exists, c > 0,; n_0 \ge 1; \text{such that}
-]
-$$
-$$
-[
-0 \le f(n) \le c \cdot g(n) \quad \text{for all } n \ge n_0
-]
-$$
-##### **Conditions Summary**
-* $( c > 0 )$ is a constant multiplier
-* $( n_0 \ge 1 )$ is a threshold after which the inequality holds
-* For all $( n \ge n_0 )$:
+0 ≤ f(n) ≤ c·g(n)\quad  for\ all\quad n ≥ n₀
   $$
-  [
-  f(n) \le c \cdot g(n)
-  ]
-  $$
+
+## In plain terms
+- Past a threshold n₀, g(n) always dominates f(n) (with some constant c)
+- Constants and lower-order terms don't matter — only the growth rate does
 
 ---
 # Graphical Representation
 
 ![[bigOOOO.excalidraw]]
-
----
-# Example
-
-Given:
-$$
-[
-f(n) = n^2,\qquad g(n) = n
-]
-$$
-Check whether:
-$$
-[
-f(n) = O(g(n))
-]
-$$
-##### Test the Big-O condition
-Big-O requires:
-$$
-[
-f(n) \le c \cdot g(n) \quad \text{for all } n \ge n_0
-]
-$$
-Substitute:
-$$
-[
-n^2 \le c \cdot n
-]
-$$
-Divide both sides by ( n ) (valid for ( n > 0 )):
-$$
-[
-n \le c
-]
-$$
-This forces:
-$$
-[
-c = n
-]
-$$
-But **c must be a constant**, and here it depends on ( n ).
-Therefore the inequality cannot hold for all large ( n ).
-
-##### Conclusion
-$$
-[
-n^2 \notin O(n)
-]
-$$
-Hence:
-$$
-[
-f(n) \ne O(g(n))
-]
-$$
 
 ---

@@ -1,4 +1,5 @@
 # Problem Statement
+
 **Caching Expensive Calculations**
 - You are optimizing performance for a system that **frequently repeats the same heavy calculations** (e.g., a backend system or a financial calculator).
 
@@ -15,6 +16,7 @@
 
 ---
 # Code
+
 ``` python
 from functools import wraps
 

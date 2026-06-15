@@ -11,6 +11,11 @@
 [[#Data Engineering]]
 	- [[#DBMS]]
 	- [[#SQL and RDBMS]]
+	- [[#ORM]]
+	- [[#**PostgreSQL**]]
+	- [[#**NOSQL and MongoDB**]]
+	- [[#Supabase]]
+	- [[#**Redis**]]
 	- [[#Big Data Analysis]]
 [[#Data Analysis]]
 [[#Classical Machine Learning - Data Science]]
@@ -115,8 +120,8 @@
 [[DBMS_How_is_DB_Accessed_from_Application_Layer]]
 ##### Database Languages
 [[DBMS_Database_Languages]]
+[[DBMS_Database_Languages_DDL]]
 [[DBMS_Database_Languages_DML]]
-[[DBMS_Databse_Languages_DML]]
 [[DBMS_Database_Languages_DQL]]
 [[DBMS_Database_Languages_DCL]]
 [[DBMS_Database_Languages_TCL]]
@@ -158,6 +163,8 @@
 ---
 ## **SQL and RDBMS**
 [[Index_SQL_RDBMS]]
+##### SQL Resources as Docs
+[[SQL_RDBMS_Resources_as_Docs]]
 ##### Relational Model
 [[SQL_RDMS_Relational_Model_Introduction]]
 [[SQL_RDBMS_Realtional_DB_Design_Typical_Workflow]]
@@ -181,10 +188,129 @@
 ##### RDBMS and SQL Introduction
 [[SQL_RDBMS_What_is_RDBMS]]
 [[SQL_RDBMS_What_is_SQL]]
-[[SQL_RDBMS_Difference]]
+[[SQL_RDBMS_Difference_between_them]]
 [[SQL_RDMS_EF_Codds_12_Rules]]
-##### SQL Setup and Tooling
+##### MySQL - MariaDB Setup and Tooling
 [[SQL_RDBMS_Popular_RDMSs]]
+[[SQL_RDBMS_MySQL_MariaDB_Arch_Linux_Installation_and_Setup]]
+[[SQL_RDBMS_MySQL_MariaDB_Arch_Linux_Official_Documentation]]
+[[SQL_RDBMS_Python_MySQL_MariaDB_Python_Connector]]
+[[SQL_RDBMS_MySQL_MariaDB_Docker_Image_Setup_and_Install]]
+##### Types of SQL Commands
+[[SQL_RDBMS_Types_of_SQL_Commands]]
+##### SQL Basic Workflow - DDL Commands
+[[SQL_RDBMS_Comments_in_SQL]]
+[[SQL_RDBMS_CREATE_DATABASE_and_TABLE_DESC_TABLE]]
+[[SQL_RDBMS_INSERT_VALUES_INTO_and_SELECT_ALL_for_Tables]]
+[[SQL_RDBMS_DROP_a_Database_IF_it_EXISTS]]
+##### SQL Data-Types
+[[SQL_RDBMS_SQL_DataTypes]]
+[[SQL_RDBMS_DataTypes_Signed_and_Unsigned]]
+[[SQL_RDBMS_Advanced_DataTypes_JSON_ENUM_SET_UUID_BIT_SERIAL_XML]]
+[[SQL_RDBMS_Spatial_Geographical_DataTypes]]
+##### SQL Example
+[[SQL_RDBMS_MySQL_Example_1]]
+##### SQL SELECT Commands and Variations - DRL Commands
+[[SQL_RDBMS_SELECT_using_FROM]]
+[[SQL_RDBMS_SELECT_without_using_FROM_DUAL_Tables]]
+[[SQL_RDBMS_SELECT_using_WHERE]]
+[[SQL_RDBMS_SELECT_using_BETWEEN]]
+[[SQL_RDBMS_SELECT_using_IN]]
+[[SQL_RDBMS_SELECT_using_AND_OR_NOT]]
+[[SQL_RDBMS_SELECT_using_IS_NULL]]
+[[SQL_RDBMS_SELECT_using_LIKE_Pattern_Searching_or_Wildcard]]
+##### SQL Sorting
+[[SQL_RDBMS_Sorting_using_ORDER_BY_Ascending]]
+[[SQL_RDBMS_Sorting_using_ORDER_BY_Descending]]
+##### SQL Distinct Data
+[[SQL_RDBMS_DISTINCT_Values]]
+##### SQL Grouping
+[[SQL_RDBMS_Data_Grouping_using_GROUP_BY_and_Aggregation_Functions]]
+[[SQL_RDBMS_Question_Find_Average_Salary_per_Department]]
+[[SQL_RDBMS_GROUP_BY_HAVING_Keyword]]
+[[SQL_RDBMS_WHERE_vs_HAVING]]
+##### SQL Constraints - DDL
+[[SQL_RDBMS_PRIMARY_KEY_Syntax_and_Good_Practices]]
+[[SQL_RDBMS_ON_DELETE_CASCADE_REFERENCES_and_FOREIGN_KEY]]
+[[SQL_RDBMS_UNIQUE]]
+[[SQL_RDBMS_CHECK_DEFAULT_and_other_Consistency_Constraints]]
+##### SQL `ALTER OPERATIONS`
+[[SQL_RDBMS_Alter_Operations_ADD_Column_and_Best_way_to_add_age]]
+[[SQL_RDBMS_Alter_Operations_MODIFY_Column]]
+[[SQL_RDBMS_Alter_Operations_CHANGE_COLUMN_to_rename_column]]
+[[SQL_RDBMS_Alter_Operations_DROP_COLUMN_to_delete_column]]
+[[SQL_RDBMS_Alter_Operations_RENAME_TO_rename_table]]
+##### SQL - DML
+[[SQL_RDBMS_INSERT_INTO_and_VALUES]]
+[[SQL_RDBMS_UPDATE_and_SET_values]]
+[[SQL_RDBMS_UPDATE_Multiple_Rows]]
+[[SQL_RDBMS_DELETE_FROM_values]]
+##### SQL Referential Constraints
+[[SQL_RDBMS_Referential_Contraints_ON_DELETE_CASACADE_and_SET_NULL]]
+##### SQL `REPLACE`
+[[SQL_RDBMS_REPLACE_INTO]]
+[[SQL_RDBMS_REPLACE_vs_UPDATE]]
+##### SQL Joins
+[[SQL_RDBMS_Joins_Concept]]
+[[SQL_RDBMS_AS_aliasing]]
+[[SQL_RDBMS_INNER_JOIN]]
+[[SQL_RDBMS_Outer_Joins_LEFT_RIGHT_and_FULL_JOIN]]
+[[SQL_RDBMS_CROSS_JOIN]]
+[[SQL_RDBMS_SELF_JOIN_for_Unary_Relations]]
+
+---
+## **ORM**
+[[Index_ORM]]
+##### ORM Introduction
+[[ORM_Introduction]]
+##### ORM for JS
+[[ORM_JS_Index]]
+[[ORM_JS_List]]
+##### ORM for Python
+[[ORM_Python_Index]]
+[[ORM_Python_List]]
+
+---
+## **PostgreSQL**
+[[Index_PostgreSQL]]
+##### PostgreSQL Introduction
+[[PostgreSQL_Introduction]]
+##### PostgreSQL Installation
+[[PostgreSQL_Full_Download_Installation_Setup]]
+[[PostgreSQL_Cloud_Hosted_Installation_Setup]]
+[[PostgreSQL_Supabase_Installation_Setup]]
+[[PostgreSQL_Docker_Hub_Installation_Setup]] - **Best Approach**
+##### ORM for JS Ecosystem
+[[ORM_JS_Index]]
+##### ORM for Python Ecosystem
+[[ORM_Python_Index]]
+
+---
+## **NOSQL and MongoDB**
+[[Index_NOSQL_MongoDB]]
+##### `NOSQL` Introduction
+
+##### MongoDB Introduction
+##### ORM for JS Ecosystem
+[[ORM_JS_Index]]
+##### ORM for Python Ecosystem
+[[ORM_Python_Index]]
+
+---
+## **Supabase**
+[[Index_Supabase]]
+
+---
+## **Redis** 
+[[Index_Redis]]
+##### Redis Introduction
+[[Redis_Introduction]]
+[[Redis_Use_Cases]]
+##### Redis Basic Concepts
+[[Redis_Cache_Miss_and_Cache_Hit]]
+[[Redis_Key_Value_Store]]
+[[Redis_TTL_Time_To_Live]]
+##### 
 
 ---
 ## **Big Data Analysis**
@@ -294,11 +420,8 @@
 [[PyTorch_The_Backward_Pass]]
 
 ---
-# Large Language Models / Applied AI
+# LLM (Large Language Models)
 [[Index_LLM]]
-##### Applied AI
-[[Index_Applied_AI]]
-##### LLM
 
 ---
 # Systems and Deployment

@@ -1,4 +1,5 @@
 # System Prompts
+
 A **system prompt** is **high-priority instruction context** that:
 - Defines the model’s **role**
 - Sets **constraints**
@@ -8,6 +9,7 @@ A **system prompt** is **high-priority instruction context** that:
 
 ---
 # Code: System Prompts
+
 ``` python
 from dotenv import load_dotenv
 import os

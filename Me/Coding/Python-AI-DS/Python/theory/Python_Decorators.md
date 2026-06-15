@@ -1,15 +1,19 @@
 # **NOTE**
+
 - Designing decorators requires **importing wraps from functools**.
+
 >**Refer this:**
 [[Python_Decorators_functools_wraps]]
 
 ---
 # What ?
+
 - It adds extra functionality to a function.
 ![[decorator.excalidraw|500]]
 
 ---
 # Code: Decorators Design
+
 ``` python
 def my_decorator(func):
     def wrapper():
@@ -31,7 +35,8 @@ print()
 
 print(greet.__name__)
 ```
-**Ouput**:
+
+**Output**:
 ``` text
 Before function runs
 Hello from decorators class

@@ -1,4 +1,5 @@
 # Example `.gitignore`
+
 ``` gitignore
 # Python
 __pycache__/

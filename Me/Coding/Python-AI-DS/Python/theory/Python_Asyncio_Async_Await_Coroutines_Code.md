@@ -1,4 +1,5 @@
 # Core Mental Model
+
 - **async def** → defines a _coroutine_ (not executed immediately)
 - **await** → _yields control_ to the event loop
 - **event loop** → runs coroutines, switches between them when they `await`
@@ -28,7 +29,9 @@ async def brew_chai():
 asyncio.run(brew_chai())
 ```
 
-### What actually happens
+---
+# What actually happens
+
 1. `brew_chai()` starts execution.
 2. Hits `await asyncio.sleep(2)`
 3. Coroutine **pauses**, control returns to the event loop.
@@ -37,6 +40,7 @@ asyncio.run(brew_chai())
 
 ---
 # Why `time.sleep()` is dangerous in async code
+
 ```python
 import time
 import asyncio
@@ -53,6 +57,7 @@ async def bad_example():
 
 ---
 # Code 2: True concurrency with `asyncio.gather`
+
 ```python
 import asyncio
 
@@ -95,6 +100,7 @@ t = 2s  → All resume
 
 ---
 # Code 3: Async I/O with `aiohttp`
+
 ```python
 import asyncio
 import aiohttp

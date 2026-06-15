@@ -1,9 +1,10 @@
 # `yield from`
 
->  * `yield from` delegates part of the generator’s operations to **another generator**.
+>  `yield from` delegates part of the generator’s operations to **another generator**.
 
 ---
 # Code: Delegating Generators with `yield from`
+
 ```python
 def local_chai():
     yield "Masala chai"
@@ -30,7 +31,9 @@ Macha
 Oolong
 ```
 
-#### Explanation:
+---
+# Explanation:
+
 * `yield from` delegates part of the generator’s operations to another generator.
 * Helps to keep code modular and avoid nested loops or repeated yield statements.
 
